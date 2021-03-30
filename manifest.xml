@@ -3,7 +3,7 @@
 	<name>Double Confirm</name>
 	<id>double_confirm</id>
 	<author>ColdTrick IT Solutions</author>
-	<version>0.1</version>
+	<version>1.0</version>
 	<description>Adds an extra confirm dialog to supported delete actions</description>
 	<website>http://www.coldtrick.com/</website>
 	<repository>https://github.com/ColdTrick/double_confirm</repository>
