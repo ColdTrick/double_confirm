@@ -2,20 +2,23 @@
 
 namespace ColdTrick\DoubleConfirm;
 
+/**
+ * Chaneg view output / params
+ */
 class Views {
 	
 	/**
 	 * Prepares the popup for double confirm dialogs on urls
 	 *
-	 * @param \Elgg\Hook $hook 'view_vars', 'output/url'
+	 * @param \Elgg\Event $event 'view_vars', 'output/url'
 	 *
-	 * @return array|void
+	 * @return array|null
 	 */
-	public static function prepareUrlVars(\Elgg\Hook $hook) {
+	public static function prepareUrlVars(\Elgg\Event $event): ?array {
 		
-		$vars = $hook->getValue();
+		$vars = $event->getValue();
 		if (empty(elgg_extract('double_confirm', $vars))) {
-			return;
+			return null;
 		}
 		
 		unset($vars['double_confirm']);
@@ -29,7 +32,7 @@ class Views {
 		}
 		
 		$text = elgg_extract('data-confirm', $vars, elgg_extract('confirm', $vars, elgg_extract('title', $vars, elgg_echo('question:areyousure'))));
-
+		
 		unset($vars['data-confirm']);
 		unset($vars['confirm']);
 		
@@ -38,15 +41,14 @@ class Views {
 		
 		$vars['data-colorbox-opts'] = json_encode([
 			'html' => elgg_view_form('double_confirm', [
-					'action' => $action,
-					'disable_security' => true,
-				], [
-					'text' => $text,
-					'href' => $href,
-					'title' => elgg_extract('title', $vars),
-					'value' => elgg_extract('text', $vars),
-				]
-			),
+				'action' => $action,
+				'disable_security' => true,
+			], [
+				'text' => $text,
+				'href' => $href,
+				'title' => elgg_extract('title', $vars),
+				'value' => elgg_extract('text', $vars),
+			]),
 		]);
 		
 		$vars['class'] = elgg_extract_class($vars, ['elgg-lightbox']);

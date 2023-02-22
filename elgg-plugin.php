@@ -4,7 +4,7 @@ return [
 	'plugin' => [
 		'version' => '2.0',
 	],
-	'hooks' => [
+	'events' => [
 		'view_vars' => [
 			'output/url' => [
 				'\ColdTrick\DoubleConfirm\Views::prepareUrlVars' => [],
