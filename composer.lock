@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b89844de00cb71a8c75a45fb86418b6f",
+    "content-hash": "f19129b508195f37cceb4f6b3b652d87",
     "packages": [
         {
             "name": "composer/installers",
@@ -157,55 +157,10 @@
             "time": "2021-04-28T06:42:17+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "coldtrick/releases",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ColdTrick/releases.git",
-                "reference": "c135064f9fc269e4f4d3ea9f0ef40989165c7b7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ColdTrick/releases/zipball/c135064f9fc269e4f4d3ea9f0ef40989165c7b7c",
-                "reference": "c135064f9fc269e4f4d3ea9f0ef40989165c7b7c",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "description": "A set of scripts needed for building releases",
-            "keywords": [
-                "ci",
-                "release",
-                "travis"
-            ],
-            "support": {
-                "issues": "https://github.com/ColdTrick/releases/issues",
-                "source": "https://github.com/ColdTrick/releases"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/ColdTrick",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/ColdTrick",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-07-08T11:28:12+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "coldtrick/releases": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

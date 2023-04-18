@@ -12,9 +12,6 @@
 	"require": {
 		"composer/installers": "^1.0.8"
 	},
-	"require-dev": {
-		"coldtrick/releases": "dev-master"
-	},
 	"conflict": {
 		"elgg/elgg": "<3.3"
 	},
