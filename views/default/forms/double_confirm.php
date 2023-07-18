@@ -27,7 +27,7 @@ $text .= elgg_view_field([
 $text .= elgg_view_field([
 	'#type' => 'submit',
 	'class' => 'elgg-button-delete',
-	'value' => elgg_extract('value', $vars),
+	'text' => elgg_extract('value', $vars),
 ]);
 
 echo elgg_view_module('info', $title, $text);
