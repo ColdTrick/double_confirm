@@ -3,7 +3,7 @@
 namespace ColdTrick\DoubleConfirm;
 
 /**
- * Chaneg view output / params
+ * Change view output / params
  */
 class Views {
 	
