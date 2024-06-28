@@ -2,7 +2,7 @@
 
 return [
 	'plugin' => [
-		'version' => '3.0.2',
+		'version' => '3.0.3',
 	],
 	'events' => [
 		'view_vars' => [
